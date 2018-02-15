@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Paper Football Scoreboard</string>
+    <string name="player1">Player 1</string>
+    <string name="player2">Player 2</string>
+    <string name="FG">Field Goal</string>
+    <string name="TD">Touchdown</string>
+    <string name="EP">Extra Point</string>
+    <string name="NewGame">New Game</string>
+</resources>
