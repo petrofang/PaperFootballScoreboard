@@ -20,17 +20,18 @@ public class MainActivity extends AppCompatActivity {
     public int p1Score = 0;
     public int p2Score = 0;
 
+    /**
+     * TODO: (3) Figure out how to keep board from resetting when landscape/portrait
+     * TODO: (2) Have a different layout for landscape mode
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
 
-    /** methods to handle button press for Player 1|2 getting a TD|FG|EP */
-
-    /**
-     * player one touchdown
-     */
+    /** methods to handle button press for Player 1|2 getting a TD|FG|EP:
+     * player one touchdown */
     public void p1TD(View v) {
         p1Score = p1Score + SCORE_TD;
         display();
@@ -90,12 +91,13 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * the reset button sets scores to 0 and refreshes the display
-     */
+     /** TODO: (1) Say which player won the game */
     public void newGame(View v) {
         p1Score = 0;
         p2Score = 0;
         display();
-        Toast.makeText(this, "Clear!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "A clear winner!", Toast.LENGTH_SHORT).show();
 
     }
+
 }
