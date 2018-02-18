@@ -8,7 +8,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    /**
+    /*
      * Adjust values for Touchdown, Field Goal, and Extra Point here
      */
     final int SCORE_TD = 3; /* Touchdown */
@@ -21,8 +21,14 @@ public class MainActivity extends AppCompatActivity {
     public int p2Score = 0;
 
     /**
-     * TODO: (3) Figure out how to keep board from resetting when landscape/portrait
-     * TODO: (2) Have a different layout for landscape mode
+     * TODO: Figure out how to keep board from resetting when landscape/portrait
+     * TODO: Have a different layout for landscape mode
+     * TODO: Add settings panel or whatever
+     * TODO: Spanish / localization
+     * TODO: Make team/player name/color customizable
+     * TODO: Make scoring customizable
+     * TODO: have default pre-set options (eg ping pong, paper football, pizza party)
+     * TODO: put default pre-set options behind pay-wall
      */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -91,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * the reset button sets scores to 0 and refreshes the display
-     /** TODO: (1) Say which player won the game */
+     * TODO: Say which player won the game */
     public void newGame(View v) {
         p1Score = 0;
         p2Score = 0;
