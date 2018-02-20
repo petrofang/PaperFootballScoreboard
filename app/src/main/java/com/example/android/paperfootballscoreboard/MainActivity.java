@@ -26,9 +26,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    /** methods to handle button press for Player 1|2 getting a TD|FG|EP */
-
-    /**
+    /** methods to handle button press for Player 1|2 getting a TD|FG|EP
+     *
+     *
      * player one touchdown
      */
     public void p1TD(View v) {
@@ -82,14 +82,16 @@ public class MainActivity extends AppCompatActivity {
      * It also displays both scores regardless of which was updated.
      */
     private void display() {
-        TextView textView = (findViewById(R.id.tvP1Score));
-        textView.setText("" + p1Score);
-        textView = (findViewById(R.id.tvP2Score));
-        textView.setText("" + p2Score);
+        TextView textView1 = (findViewById(R.id.tvP1Score));
+        TextView textView2 = (findViewById(R.id.tvP2Score));
+        String sP1Score = "" + p1Score;
+        String sP2Score = "" + p2Score;
+        textView1.setText(sP1Score);
+        textView2.setText(sP2Score);
     }
 
     /**
-     * the reset button sets scores to 0 and refreshes the display
+     * the Reset button sets scores to 0 and refreshes the display
      */
     public void newGame(View v) {
         p1Score = 0;
